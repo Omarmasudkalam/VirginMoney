@@ -2,18 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_graph"
-    app:startDestination="@id/nav_home">
-
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="com.omk.ict.virginmoney.ui.Home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_people">
     <fragment
         android:id="@+id/nav_people"
         android:name="com.omk.ict.virginmoney.ui.People.PeopleFragment"
-        android:label="fragment_people"
+        android:label="@string/fragment_people"
         tools:layout="@layout/fragment_people" >
         <action
             android:id="@+id/action_peopleFragment_to_detailsFragment"
@@ -22,11 +16,11 @@
     <fragment
         android:id="@+id/nav_room"
         android:name="com.omk.ict.virginmoney.ui.Room.RoomFragment"
-        android:label="fragment_room"
+        android:label="@string/fragment_room"
         tools:layout="@layout/fragment_room" />
     <fragment
         android:id="@+id/nav_details"
         android:name="com.omk.ict.virginmoney.ui.People.Details.DetailsFragment"
-        android:label="fragment_details"
+        android:label="@string/fragment_details"
         tools:layout="@layout/fragment_details" />
 </navigation>
